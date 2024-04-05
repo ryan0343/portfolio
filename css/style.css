@@ -1,0 +1,89 @@
+:root{
+    --bs-primary: #BA3F1D;
+    --bs-primary-bg-subtle: #ba3f1db4;
+
+    --bs-body-bg: #F7F3F3;
+
+    --bs-body-color: #182226;
+    --bs-body-color-translucent: #272d2fa6;
+
+    --bs-border-color: #eaeaee;
+
+    --bs-orange: #FEA82F;
+    --bs-white: #F7F3F3;
+    --bs-light: #eaeaee;
+    --bs-tertiary-bg: var(--bs-orange);
+    --bs-tertiary-bg-rgb: 254, 168, 47;
+    --orange-off: #FBC67D;
+
+}
+
+.nav-link:hover, .nav-link:active {
+    color: var(--bs-body-bg);
+    background-color: var(--bs-body-color-translucent);
+}
+
+/* .navbar, footer, .card-body {
+    background-color: var(--orange);
+} */
+
+/* .card {
+    background-color: var(--orange);
+} */
+
+/* Regulates the size of the navigation logo for responsiveness */
+.nav-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.banner-logo {
+    width: 296px;
+    height: 298px;
+}
+
+a {
+    color: var(--bs-body-color);
+}
+
+/* Dividing Border */
+
+hr {
+    border: 8px solid var(--bs-border-color);
+}
+
+.card {
+    padding: 2em;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-body-bg);
+    --bs-btn-hover-border-color: var(--bs-primary-bg-subtle);
+    --bs-btn-active-bg: var(--bs-primary-bg-subtle);
+    --bs-btn-active-border-color:var(--bs-primary-bg-subtle);
+}
+
+.carousel-item {
+    height: 360;
+    width: 100%;
+}
+
+.carousel-item img {
+    margin: auto auto;
+    max-height: 180px;
+    padding: auto 0;
+}
+
+.carousel-caption {
+    background-color: var(--bs-body-color-translucent);
+    width: 69%;
+    padding: 0.5em;
+}
+
+.carousel button:hover {
+    background-color: var(--bs-body-color-translucent);
+}
