@@ -20,10 +20,10 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-lg">
-                <a href="#" class="navbar-brand fw-bold">
+            <div class="container-lg d-lg-flex">
+                <a href="#" class="navbar-brand fw-bold align-middle">
                     <img src="/images/svg/Personal-logo-1-dark-vector.svg" alt="Logo"
-                        class="d-inline-block align-middle nav-logo">
+                        class="d-inline-block nav-logo">
                     R.L. Ryan Design
                 </a>
                 <!-- Navbar hamburger for mobile and tablet designs -->
@@ -31,10 +31,10 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse align-middle" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                <div class="collapse navbar-collapse d-lg-flex justify-content-center justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav text-center h5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projects</a>
@@ -43,7 +43,7 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li>
                             <button class="btn"><img class="" src="images/svg/circle-half.svg" alt="change theme"></button>
@@ -56,7 +56,7 @@
     <main>
         <div class="container bg-white">
             <!-- Banner SECTION -->
-            <div class="row">
+            <div class="row overflow-x-visible overflow-y-hidden">
                 <!-- Banner Text -->
                 <div class="col-10 col-sm text-end d-flex flex-column justify-content-center">
                     <div>
@@ -69,13 +69,16 @@
                     </div>
                     <div>
                         <p>Let me show you my work!</p>
-                        <a class="btn" href="#">See Projects</a>
+                        <a class="btn btn-primary" href="#">See Projects</a>
                     </div>
                 </div>
                 <!-- banner image -->
-                <div class="col-2 col-sm bg-body-tertiary">
+                <div class="col-1"></div>
+                <div class="col-1 col-sm bg-body-tertiary">
                     <img class="d-none d-sm-inline-block banner-logo" src="/images/svg/Personal-logo-1-dark-vector.svg" alt="">
                 </div>
+                <div class="sidebar col z-n1 position-absolute end-0 bg-body-tertiary d-inline-block"></div>
+                
             </div>
             <hr>
             <!-- Skills SECTION -->
@@ -116,7 +119,7 @@
                     <div id="carouselFeatured" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/images/project-web-ryandesign.png" class="d-block w-100 .carousel-img"
+                                <img src="/images/project-web-ryandesign.png" class="d-block object-fit-scale carousel-img"
                                     alt="...">
                             </div>
                             <div class="carousel-item">
@@ -126,7 +129,7 @@
                         </div>
                         <div class="carousel-item">
                             <picture>
-                                <img src="/images/Ryan - Planet Killer ONE - empty space.png" alt="">
+                                <img src="/images/Ryan - Planet Killer ONE - empty space.png" class="object-fit-scale" alt="">
                             </picture>
                             <!-- <a href="#" class="carousel-caption btn">Check it out</a> -->
                         </div>
