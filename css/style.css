@@ -16,6 +16,12 @@
     --bs-tertiary-bg-rgb: 254, 168, 47;
     --orange-off: #FBC67D;
 
+    /* Breakpoints for custom media queries */
+    --bp-sm: 576px;
+    --bp-md: 768px;
+    --bp-lg: 992px;
+    --bp-xl: 1200px;
+    --bp-xxl: 1400px;
 }
 
 .nav-link:hover, .nav-link:active {
@@ -37,10 +43,7 @@
     height: 60px;
 }
 
-.banner-logo {
-    width: 296px;
-    height: 298px;
-}
+
 
 a {
     color: var(--bs-body-color);
@@ -68,7 +71,7 @@ hr {
 }
 
 .carousel-item {
-    height: 360;
+    height: 360px;
     width: 100%;
 }
 
@@ -86,4 +89,25 @@ hr {
 
 .carousel button:hover {
     background-color: var(--bs-body-color-translucent);
+}
+
+.sidebar {
+    /* height: 200%; */
+    /* height: ; */
+    width: 15%;
+}
+
+/* Custom adaptation for various sizes not included in base BS */
+@media (min-width: var(--bp-sm)) {
+    .banner-logo {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: var(--bp-md)) {
+    .banner-logo {
+        width: 296px;
+        height: 298px;
+    }
 }
