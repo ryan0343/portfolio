@@ -13,17 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,87.5,100..1000&display=swap" rel="stylesheet">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
             <div class="container-lg d-lg-flex">
-                <a href="#" class="navbar-brand fw-bold align-middle">
-                    <img src="/images/svg/Personal-logo-1-dark-vector.svg" alt="Logo"
-                        class="d-inline-block nav-logo">
+                <a href="index.html" class="navbar-brand fw-bold align-middle">
+                    <img src="/images/svg/Personal-logo-1-dark-vector.svg" alt="Logo" class="d-inline-block nav-logo">
                     R.L. Ryan Design
                 </a>
                 <!-- Navbar hamburger for mobile and tablet designs -->
@@ -31,22 +36,24 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-center justify-content-lg-end" id="navbarNav">
+                <div class="collapse navbar-collapse d-lg-flex justify-content-center justify-content-lg-end"
+                    id="navbarNav">
                     <ul class="navbar-nav text-center h5">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="/about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                            <a class="nav-link active shadow-sm" aria-current="page" href="contact.html">Contact</a>
                         </li>
                         <li>
-                            <button class="btn"><img class="" src="images/svg/circle-half.svg" alt="change theme"></button>
+                            <button class="btn"><img class="" src="images/svg/circle-half.svg"
+                                    alt="change theme"></button>
                         </li>
                     </ul>
                 </div>
@@ -55,8 +62,43 @@
     </header>
 
     <main>
-        <!-- Add contact form and logo image here. -->
+        <div class="container bg-white p-3 px-sm-0">
 
+            <!-- Main Header -->
+            <h1 class="text-center m-auto col-8">Contact</h1>
+
+            <!-- Image area - Logo -->
+            <div class="bg-body-tertiary d-flex align-content-center my-2">
+                <img src="/images/svg/Personal-logo-1-dark-vector.svg" alt="Logo"
+                        class="d-inline-block m-auto contact-logo align-middle my-4">
+            </div>
+            
+
+            <!-- Add contact form and logo image here. -->
+            <form class="p-3 d-grid bg-body-tertiary" action="">
+                <!-- Name -->
+                <div class="row gy-3">
+                <div class="form-group">
+                    <label class="fw-semibold" for="formGroupName">Name</label>
+                    <input type="text" class="form-control" id="formGroupName" placeholder="">
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                    <label class="fw-semibold" for="formGroupEmail">Email</label>
+                    <input type="text" class="form-control" id="formGroupEmail" placeholder="">
+                    <small id="emailHelpBlock" class="form-text text-muted">
+                        Ensure that your email address is correct, otherwise we will be unable to get back to you.
+                    </small>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <label class="fw-semibold" for="formGroupMessage">Message</label>
+                    <textarea class="form-control" id="formGroupMessage" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary btn-lg col-5 ms-auto me-2" type="submit">Submit form</button>
+            </div>
+            </form>
+        </div>
     </main>
 
     <footer class="text-center fs-6 bg-body-tertiary">
