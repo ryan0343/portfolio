@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - RLRyanDesign</title>
+    <title>Home - RLRyanDesign</title>
 
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,17 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,87.5,100..1000&display=swap" rel="stylesheet">
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand fw-bold">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+            <div class="container-lg d-lg-flex">
+                <a href="index.html" class="navbar-brand fw-bold align-middle">
                     <img src="/images/svg/Personal-logo-1-dark-vector.svg" alt="Logo"
-                        class="d-inline-block align-middle nav-logo">
+                        class="d-inline-block nav-logo">
                     R.L. Ryan Design
                 </a>
                 <!-- Navbar hamburger for mobile and tablet designs -->
@@ -31,26 +36,46 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse align-middle" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse d-lg-flex justify-content-center justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav text-center h5">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                            <a class="nav-link active shadow-sm"
+                            aria-current="page"  href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <button class="btn"><img class="" src="images/svg/circle-half.svg" alt="change theme"></button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+<main>
+    <div class="container bg-white p-3 px-sm-0">
+        <h1 class="fw-semibold">About me</h1>
 
+    <div>
+        <!-- image -->
+        <img src="" alt="">
+        <!-- Text block -->
+        <h2 class="bg-body-tertiary fw-semibold">Robert Liam Ryan</h2>
+
+        <p>UX Designer, Digital Artist, Videographer, Photographer, Editor & Web Developer.</p>
+
+        <p>A student of Interactive Media & Design at Algonquin College, Robert has had plenty of experience with Digital Production and UX Design throughout most of his academic career, including a partial degree at Wilfrid Laurier University in addition to work he did as part of a Specialist High Skills Major for Communications Technology while in High School.</p>
+    </div>
+    </div>
+    
+</main>
 
 </body>
 
