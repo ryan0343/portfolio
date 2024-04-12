@@ -22,6 +22,8 @@
     --bp-lg: 992px;
     --bp-xl: 1200px;
     --bp-xxl: 1400px;
+
+    --bs-font-sans-serif: "Roboto Flex", sans-serif;
 }
 
 .nav-link:hover, .nav-link:active {
@@ -29,13 +31,13 @@
     background-color: var(--bs-body-color-translucent);
 }
 
-/* .navbar, footer, .card-body {
-    background-color: var(--orange);
-} */
+h1 {
+    font-size: 3.2rem;
+}
 
-/* .card {
-    background-color: var(--orange);
-} */
+h2 {
+    font-size: 2.25rem;
+}
 
 /* Regulates the size of the navigation logo for responsiveness */
 .nav-logo {
@@ -43,10 +45,26 @@
     height: 60px;
 }
 
+.contact-logo {
+    width: 190px;
+    height: 190px;
+}
 
+.active {
+    font-weight: 600;
+    background-color: var(--orange-off);
+}
+
+.nav-link.active:active, .nav-link.active:hover {
+    color: var(--bs-body-bg);
+}
 
 a {
     color: var(--bs-body-color);
+}
+
+.full-width{
+    width: 80vw;
 }
 
 /* Dividing Border */
@@ -94,7 +112,7 @@ hr {
 .sidebar {
     /* height: 200%; */
     /* height: ; */
-    width: 15%;
+    width: 9%;
 }
 
 /* Custom adaptation for various sizes not included in base BS */
@@ -103,11 +121,16 @@ hr {
         width: 200px;
         height: 200px;
     }
+
+    .contact-logo {
+        width: 220px;
+        height: 220px;
+    }
 }
 
 @media (min-width: var(--bp-md)) {
     .banner-logo {
-        width: 296px;
-        height: 298px;
+        width: 364px;
+        height: 364px;
     }
 }
