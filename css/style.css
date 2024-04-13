@@ -1,5 +1,6 @@
 :root{
     --bs-primary: #BA3F1D;
+    --bs-primary-rgb: 186, 63, 29;
     --bs-primary-bg-subtle: #ba3f1db4;
 
     --bs-body-bg: #F7F3F3;
@@ -9,12 +10,14 @@
 
     --bs-border-color: #eaeaee;
 
+    --bs-secondary: #FBC67D;
+    --bs-secondary-rgb: 251, 198, 125;
+
     --bs-orange: #FEA82F;
     --bs-white: #F7F3F3;
     --bs-light: #eaeaee;
     --bs-tertiary-bg: var(--bs-orange);
     --bs-tertiary-bg-rgb: 254, 168, 47;
-    --orange-off: #FBC67D;
 
     /* Breakpoints for custom media queries */
     --bp-sm: 576px;
@@ -31,8 +34,17 @@
     background-color: var(--bs-body-color-translucent);
 }
 
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
 h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
+}
+
+.btn.disabled {
+    background-color: var(--bs-body-color-translucent);
+    border-color: var(--bs-primary);
 }
 
 h2 {
@@ -52,19 +64,16 @@ h2 {
 
 .active {
     font-weight: 600;
-    background-color: var(--orange-off);
+    background-color: var(--bs-secondary);
 }
 
-.nav-link.active:active, .nav-link.active:hover {
+.nav-link.active:active, .nav-link.active:hover, .nav-link:active:focus {
     color: var(--bs-body-bg);
+    background-color: var(--bs-secondary);
 }
 
 a {
     color: var(--bs-body-color);
-}
-
-.full-width{
-    width: 80vw;
 }
 
 /* Dividing Border */
@@ -89,7 +98,7 @@ hr {
 }
 
 .carousel-item {
-    height: 360px;
+    height: 180px;
     width: 100%;
 }
 
@@ -110,8 +119,6 @@ hr {
 }
 
 .sidebar {
-    /* height: 200%; */
-    /* height: ; */
     width: 9%;
 }
 
@@ -126,11 +133,40 @@ hr {
         width: 220px;
         height: 220px;
     }
+
+    .carousel-item {
+        height: 220px;
+    }
 }
 
 @media (min-width: var(--bp-md)) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
     .banner-logo {
         width: 364px;
         height: 364px;
+    }
+
+    .carousel-item {
+        height: 260px;
+    }
+}
+
+@media (min-width: var(--bp-lg)) {
+    .banner-logo {
+        width: 600px;
+        height: 600px;
+    }
+
+    .contact-logo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .carousel-item {
+        height: 220px;
     }
 }
